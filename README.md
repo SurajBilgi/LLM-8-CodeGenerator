@@ -109,6 +109,84 @@ When comparing LLMs, consider these factors in order of importance for your use 
 4. **Performance Monitoring**: Track latency, accuracy, and user satisfaction
 5. **Fallback Strategy**: Have backup options for high-availability systems
 
+## Common LLM Benchmarks
+
+Understanding standardized benchmarks is crucial for comparing LLM performance across different models. Here are 7 common benchmarks you will often encounter when evaluating LLMs:
+
+<!-- Add benchmark comparison image here: ![LLM Benchmarks](path/to/benchmark-image.png) -->
+
+| Benchmark | What's Being Evaluated | Description |
+|-----------|----------------------|-------------|
+| **ARC** | Reasoning | A benchmark for evaluating scientific reasoning; multiple-choice questions |
+| **DROP** | Language Comprehension | Distill details from text then add, count or sort |
+| **HellaSwag** | Common Sense | "Harder Endings, Long Contexts and Low Shot Activities" |
+| **MMLU** | Understanding | Factual recall, reasoning and problem solving across 57 subjects |
+| **TruthfulQA** | Accuracy | Robustness in providing truthful replies in adversarial conditions |
+| **Winogrande** | Context | Test the LLM understands context and resolves ambiguity |
+| **GSM8K** | Math | Math and word problems taught in elementary and middle schools |
+
+### Detailed Benchmark Explanations
+
+#### ARC (AI2 Reasoning Challenge)
+- **Purpose**: Evaluates scientific reasoning capabilities
+- **Format**: Multiple-choice questions from science exams
+- **Difficulty**: Designed to be challenging for current AI systems
+- **Use Case**: Assessing logical reasoning and scientific knowledge
+
+#### DROP (Discrete Reasoning Over Paragraphs)
+- **Purpose**: Tests reading comprehension with numerical reasoning
+- **Tasks**: Extract information from text and perform calculations
+- **Skills Tested**: Addition, counting, sorting, comparison
+- **Use Case**: Evaluating comprehension with quantitative reasoning
+
+#### HellaSwag
+- **Purpose**: Common sense reasoning in everyday situations
+- **Format**: Complete sentences with the most logical ending
+- **Challenge**: "Harder Endings, Long Contexts and Low Shot Activities"
+- **Use Case**: Testing intuitive understanding of human behavior
+
+#### MMLU (Massive Multitask Language Understanding)
+- **Purpose**: Comprehensive knowledge assessment
+- **Scope**: 57 subjects from elementary to professional level
+- **Areas**: STEM, humanities, social sciences, and more
+- **Use Case**: Broad knowledge evaluation across disciplines
+
+#### TruthfulQA
+- **Purpose**: Measures truthfulness and reliability
+- **Challenge**: Questions designed to elicit false beliefs
+- **Focus**: Resistance to generating misinformation
+- **Use Case**: Evaluating model reliability and factual accuracy
+
+#### Winogrande
+- **Purpose**: Contextual understanding and ambiguity resolution
+- **Format**: Fill-in-the-blank with pronoun resolution
+- **Skill**: Understanding context to resolve ambiguous references
+- **Use Case**: Testing nuanced language understanding
+
+#### GSM8K (Grade School Math 8K)
+- **Purpose**: Mathematical problem-solving ability
+- **Level**: Elementary and middle school math problems
+- **Format**: Word problems requiring multi-step reasoning
+- **Use Case**: Assessing mathematical reasoning and calculation skills
+
+### Using Benchmarks for Model Selection
+
+When comparing LLMs using these benchmarks:
+
+1. **Match Benchmarks to Use Case**: Choose benchmarks relevant to your application
+2. **Consider Multiple Metrics**: Don't rely on a single benchmark score
+3. **Check Recency**: Ensure benchmark results are from recent model versions
+4. **Understand Limitations**: Benchmarks may not capture all real-world performance aspects
+5. **Combine with Practical Testing**: Use benchmarks alongside your own evaluation criteria
+
+### Benchmark Score Interpretation
+
+- **Scores are typically reported as percentages** (0-100%)
+- **Higher scores generally indicate better performance**
+- **Compare scores within the same benchmark** across different models
+- **Consider the difficulty level** of each benchmark when interpreting results
+- **Look for consistency** across multiple benchmarks rather than single high scores
+
 ---
 
 *This guide provides a framework for comparing LLMs across multiple dimensions. The optimal choice depends on your specific requirements, constraints, and priorities.*
